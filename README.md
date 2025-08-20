@@ -17,4 +17,6 @@
 - gitignore sagt git was ignoriert werden soll, zb node_modules oder .env (alles was dort steht wird nicht auf GitHub mitgepusht)
 - dockerignore macht im endeffekt das selbe, nur dass die dockerignore bestimmt, was NICHT mit ins image kommt
 ---
-![image](https://i.imgur.com/RyNxtkp.png)
+![image1](https://i.imgur.com/ekAObyE.png)
+---
+![image2](https://i.imgur.com/RyNxtkp.png)
