@@ -1,3 +1,26 @@
+# 21.08.2025
+
+## Screenshots
+
+![image1](https://i.imgur.com/02AFGnm.png)
+![image2](https://i.imgur.com/y6tuJum.png)
+![image3](https://i.imgur.com/yCtHVWo.png)
+---
+## Reflexionsfragen
+- Namensräume:
+  - die unterteilung in username/repository verhindert, dass sich namen überschneiden, da die Usernamen auf Docker einzigartig sind, das heisst wenn ich dort meinen Usernamen mit in den namen gebe, wird es niemals den fall geben dass es 2 Repositorys mit dem Namen "alexsch95/repositoryname" geben wird. Wenn jeder einfach nur den repository namen nehmen würde, würde es überschneidungen geben, wenn person X ein repository namens my-react-app hat und Person Y auch.
+- Tag vs. Build:
+  - `docker tag` erstellt kein neues image, sondern nimmt das genannte image, mit der selben id etc und nennt es quasi um
+  - `docker build` erstellt ein neues image
+- Versionierung:
+  - Wenn die ursprungsversion 1.0.0 wäre, würde der kleine Bugfix dementsprechend 1.0.1 sein
+- Öffentlich vs Privat:
+  - wenn enthaltener code zb sensible daten enthält die nicht für die öffentlichkeit bestimmt sind
+ 
+- ![Link zu meinem Docker Hub Repository](https://hub.docker.com/repository/docker/alexsch95/my-react-app/general)
+
+# 20.08.2025
+
 ## Multi-Stage Build:
 - Der Hauptvorteil ist, dass das finale image was im nginx gehostet wird viel kleiner ist und durch den vite build-prozess quasi aufs minimale runtergebrochen wird und das dann im endeffekt erst durch COPY --from=builder ... aus dem app/dist Ordner nach nginx kopiert wird
 - Durch den Ablauf im Dockerfile werden erst die abhängigkeiten kopiert und installiert
